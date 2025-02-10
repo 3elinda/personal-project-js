@@ -8,11 +8,32 @@
   </head>
   <body>
     <header>
-      <nav><h1>My Photos</h1></nav>
+      <nav>
+        <button>button</button>
+        <h1>My Photos</h1>
+      </nav>
     </header>
 
     <main>
-      <img src="/images/camera.png" alt="camera-icon" />
+      <!-- <img
+        src="/images/digital-camera.png"
+        alt="camera-icon"
+        class="camera-icon"
+      /> -->
+      <section class="slider-wrapper">
+        <button class="slide-arrow" id="arrow-prev">&#8249;</button>
+        <button class="slide-arrow" id="arrow-next">&#8250;</button>
+
+        <div class="slide-container" id="slide-container">
+          <img src="/images/ocean.jpg" alt="ocean-img" class="images" />
+          <img src="/images/cat.jpg" alt="cat-img" class="images" />
+          <img src="/images/boat.jpg" alt="boat-ocean-img" class="images" />
+          <img src="/images/lake.jpg" alt="lake-img" class="images" />
+          <img src="/images/graffiti.jpg" alt="graffiti-img" class="images" />
+          <img src="/images/girls.jpg" alt="girls-img" class="images" />
+        </div>
+      </section>
     </main>
+    <script src="photos.js"></script>
   </body>
 </html>

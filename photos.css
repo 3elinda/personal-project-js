@@ -3,6 +3,71 @@
   src: url(/fonts/Orbitron-VariableFont_wght.ttf);
 }
 
+body {
+  background-color: #7a86d4;
+}
+
 h1 {
   font-family: orbitron;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  /* border: 2px solid blue; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url(/images/digital-camera.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 72%;
+  height: 90vh;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container {
+  /* border: 2px solid hotpink; */
+  height: 60vh;
+  width: 33%;
+  display: flex;
+  overflow: hidden;
+  margin-left: 23.5%;
+  margin-top: 5%;
+  /* justify-self: center;
+  margin-right: 5%; */
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  height: 5rem;
+  background-color: white;
+  width: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+}
+
+#arrow-prev {
+  left: 0;
+}
+
+#arrow-next {
+  /* border: 2px solid red; */
+  right: 0;
+}
+
+/* .images {
+  border: 2px solid green;
+} */
