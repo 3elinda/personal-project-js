@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-family: orbitron;
+  font-size: 50px;
 }
 
 nav {
@@ -19,30 +20,34 @@ nav {
 main {
   /* border: 2px solid blue; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   background-image: url(/images/digital-camera.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 72%;
+  background-size: 65%;
   height: 90vh;
 }
 
 .slider-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
   overflow: hidden;
+  height: 65%;
+  width: 29%;
+  transform: translateX(90%);
+  margin-top: 5%;
+  /* border: 2px solid hotpink; */
 }
 
 .slide-container {
   /* border: 2px solid hotpink; */
-  height: 60vh;
-  width: 33%;
+  /* height: 60vh; */
+  /* width: 58%; */
   display: flex;
   overflow: hidden;
-  margin-left: 23.5%;
-  margin-top: 5%;
-  /* justify-self: center;
-  margin-right: 5%; */
+  border-radius: 5%;
+  margin-top: 0;
 }
 
 .slide-arrow {
@@ -51,7 +56,7 @@ main {
   top: 0;
   bottom: 0;
   height: 5rem;
-  background-color: white;
+  background-color: #a5c1dfa8;
   width: 2rem;
   font-size: 3rem;
   cursor: pointer;
@@ -64,10 +69,24 @@ main {
 }
 
 #arrow-next {
-  /* border: 2px solid red; */
   right: 0;
 }
 
-/* .images {
-  border: 2px solid green;
-} */
+.images:nth-of-type(4) {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  main {
+    background-size: 100%;
+  }
+
+  .slider-wrapper {
+    /* border: 2px solid rebeccapurple; */
+    height: 49%;
+    margin-top: 7%;
+    width: 45%;
+    transform: translateX(30%);
+  }
+}
